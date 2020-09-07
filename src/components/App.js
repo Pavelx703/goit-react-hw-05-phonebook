@@ -103,7 +103,7 @@ export default class App extends Component {
         </CSSTransition>
         <ContactForm onAddContact={this.addContact} />
 
-        <h2>Contacts</h2>
+        <h2>Find contacts by name</h2>
         <Filter value={filter} onChangeFilter={this.changeFilter} />
         {visibleContacts.length > 0 && (
           <ContactList

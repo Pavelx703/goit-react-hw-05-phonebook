@@ -15,7 +15,7 @@ const ContactList = ({ contacts, onRemoveContact }) => (
             className={style.onDelete}
             onClick={() => onRemoveContact(id)}
           >
-            Delete
+            X
           </button>
         </li>
       </CSSTransition>
