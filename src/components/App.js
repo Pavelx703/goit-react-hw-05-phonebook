@@ -65,7 +65,7 @@ export default class App extends Component {
     );
   };
   componentDidMount() {
-    console.log("componentDidMount");
+   
     this.getFromlocalStorage();
     this.setState({ inOn: true });
   }
