@@ -81,14 +81,13 @@ export default class App extends Component {
   }
 
   componentDidUpdate(prevState) {
-    console.log("componentDidUpdate");
     if (prevState.contacts !== this.state.contacts) {
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
   }
   render() {
     const { filter } = this.state;
-    console.log("render");
+
     const visibleContacts = this.getVisibleContacts();
 
     return (
